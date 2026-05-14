@@ -190,3 +190,46 @@ p{
     cursor:pointer;
     box-shadow:0 10px 25px rgba(250,204,21,.35);
 }
+
+/* BOTON YOUTUBE */
+
+.youtube-btn{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:15px;
+    padding:20px;
+    border-radius:22px;
+    text-decoration:none;
+    background:linear-gradient(135deg,#ff0000,#dc2626);
+    color:white;
+    font-size:22px;
+    font-weight:900;
+    transition:.3s;
+    box-shadow:0 10px 25px rgba(255,0,0,.35);
+    margin-bottom:25px;
+}
+
+.youtube-btn:hover{
+    transform:scale(1.03);
+}
+
+.youtube-btn i{
+    font-size:38px;
+}
+
+/* CELULAR */
+
+@media(max-width:768px){
+
+    .youtube-btn{
+        font-size:18px;
+        padding:18px;
+    }
+
+    .youtube-btn i{
+        font-size:30px;
+    }
+
+}
