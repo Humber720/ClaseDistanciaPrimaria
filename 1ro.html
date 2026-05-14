@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1RO PRIMARIA</title>
+    <link rel="stylesheet" href="curso.css">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="icono verde">
+                <i class="fa-solid fa-music"></i>
+            </div>
+
+            <h1>1RO PRIMARIA</h1>
+            <h2>
+            🎵 Tema: Las Notas Musicales
+            </h2>
+            <h3>
+            ✍️ Observa la imagen y copia el contenido en tu cuaderno de música.
+            </h3>
+            <img src="imagenes/curso1.jpg"
+            class="imagen"
+            onclick="abrirImagen(this.src)">
+
+            <p>
+            🎬 Observa atentamente el video educativo.
+            </p>
+            <div class="video-box">
+                <iframe
+                src="https://www.youtube.com/embed/TU_VIDEO_1"
+                allowfullscreen>
+                </iframe>
+
+            <p>
+            🎮 Responda correctamente la actividad evaluativa.
+            🧑‍🎓 Debe escribir el nombre del estudiante para registrar su asistencia.
+            </p>
+            </div>
+            <a href="https://kahoot.it/challenge/0051938577"
+            target="_blank"
+            class="btn rojo">
+            <i class="fa-solid fa-gamepad"></i>
+            EVALUACIÓN
+            </a>
+        </div>
+    </div>
+
+    <!-- MODAL -->
+    <div id="modalImagen" class="modal">
+        <span class="cerrar" onclick="cerrarImagen()">
+            &times;
+        </span>
+        <img class="modal-contenido" id="imgGrande">
+    </div>
+
+    <!-- BOTON SALIR -->
+    <button class="btn salir"
+    onclick="salirPagina()">
+    <i class="fa-solid fa-right-from-bracket"></i>
+    SALIR
+    </button>
+
+    <script src="curso.js"></script>
+
+</body>
+</html>

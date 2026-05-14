@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Acceso | Educación Musical
+    </title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="estilo.css">
+
+    <!-- ICONOS -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+
+    <!-- FUENTE -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- FONDO -->
+    <div class="background">
+
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+
+    </div>
+
+    <!-- LOGIN -->
+    <main class="login-container">
+
+        <div class="login-box">
+
+            <div class="logo">
+
+                <i class="fa-solid fa-music"></i>
+
+            </div>
+
+            <h1>
+                EDUCACIÓN MUSICAL 🎵
+            </h1>
+
+            <h2>
+                Unidad Educativa "Simona Manzaneda"
+            </h2>
+
+            <p>
+                Selecciona tu curso e ingresa la clave.
+            </p>
+
+            <!-- SELECT -->
+            <select id="curso">
+
+                <option value="">
+                    -- Selecciona tu curso --
+                </option>
+
+                <option value="1ro">
+                    1RO PRIMARIA
+                </option>
+
+                <option value="2do">
+                    2DO PRIMARIA
+                </option>
+
+                <option value="3ro">
+                    3RO PRIMARIA
+                </option>
+
+                <option value="4to">
+                    4TO PRIMARIA
+                </option>
+
+                <option value="5to">
+                    5TO PRIMARIA
+                </option>
+
+                <option value="6to">
+                    6TO PRIMARIA
+                </option>
+
+            </select>
+
+            <!-- CLAVE -->
+            <div class="password-box">
+
+                <input type="password"
+                id="clave"
+                placeholder="Ingresa la clave">
+
+                <i class="fa-solid fa-eye"
+                id="iconoClave"
+                onclick="mostrarClave()"></i>
+
+            </div>
+
+            <!-- BOTON -->
+            <button onclick="ingresar()">
+
+                <i class="fa-solid fa-right-to-bracket"></i>
+                INGRESAR
+
+            </button>
+
+            <!-- MENSAJE -->
+            <div id="mensaje"></div>
+
+        </div>
+
+    </main>
+
+    <!-- JS -->
+    <script src="login.js"></script>
+
+</body>
+</html>
