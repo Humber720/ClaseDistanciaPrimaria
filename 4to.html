@@ -1,77 +1,70 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>1RO PRIMARIA</title>
-
-<link rel="stylesheet" href="curso.css">
-
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
-
-<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&display=swap" rel="stylesheet">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <!-- ================= META ANTICACHE ================= -->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <title>4TO PRIMARIA</title>
+    <link rel="stylesheet" href="curso.css">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&display=swap" rel="stylesheet">
 </head>
 
 <body>
+    <div class="container">
+        <div class="card">
+            <div class="icono verde">
+                <i class="fa-solid fa-music"></i>
+            </div>
 
-<div class="container">
+            <h1>4TO PRIMARIA</h1>
+            <h2>
+            🎵 Tema: Canciones y Coro Infantil
+            </h2>
+            <h3>
+            ✍️ Observa la imagen y copia el contenido en tu carpeta de música.
+            </h3>
+            <img src="imagenes/Curso4.jpg"
+            class="imagen"
+            onclick="abrirImagen(this.src)">
 
-    <div class="card">
-
-        <div class="icono verde">
-
-            <i class="fa-solid fa-music"></i>
-
+            <p>
+            🎬 Observa atentamente el video de la canción infantil.
+            </p>
+                <div class="video-link">
+                    <a href="https://youtu.be/p1PdRurXKrE?si=G9V1zbDxjv94bMYN"
+                    target="_blank"
+                    class="youtube-btn">
+                        <i class="fa-brands fa-youtube"></i>
+                        VER VIDEO DE LA CANCIÓN
+                    </a>
+                </div>
+            <div>
+                <p>
+                🎮 Responda correctamente la actividad evaluativa.
+                🧑‍🎓 Debe escribir el nombre del estudiante para registrar su asistencia.
+                </p>
+            </div>
+            <a href="https://kahoot.it/challenge/03049313"
+            target="_blank"
+            class="btn rojo">
+            <i class="fa-solid fa-gamepad"></i>
+            EVALUACIÓN
+            </a>
         </div>
-
-        <h1>4TO PRIMARIA</h1>
-
-        <img src="imagenes/curso4.jpg"
-        class="imagen"
-        onclick="abrirImagen(this.src)">
-
-        <p>
-            🎵 Tema: Las Notas Musicales
-        </p>
-
-        <div class="video-box">
-
-            <iframe
-            src="https://www.youtube.com/embed/TU_VIDEO_1"
-            allowfullscreen>
-            </iframe>
-
-        </div>
-
-        <a href="https://kahoot.it/"
-        target="_blank"
-        class="btn rojo">
-
-        <i class="fa-solid fa-gamepad"></i>
-        EVALUACIÓN
-
-        </a>
-
     </div>
 
-</div>
-
-<!-- MODAL -->
-
-<div id="modalImagen" class="modal">
-
-    <span class="cerrar" onclick="cerrarImagen()">
-        &times;
-    </span>
-
-    <img class="modal-contenido" id="imgGrande">
-
-</div>
+    <!-- MODAL -->
+    <div id="modalImagen" class="modal">
+        <span class="cerrar" onclick="cerrarImagen()">
+            &times;
+        </span>
+        <img class="modal-contenido" id="imgGrande">
+    </div>
 
     <!-- BOTON SALIR -->
     <button class="btn salir"
@@ -80,7 +73,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     SALIR
     </button>
 
-<script src="curso.js"></script>
+    <script src="curso.js"></script>
 
 </body>
 </html>
